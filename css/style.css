@@ -313,6 +313,9 @@ main {
   align-self: center;
 }
 .main-product-detail .title {
+  width: 90%;
+  min-width: 29rem;
+  max-width: 90rem;
   font-size: 2.4rem;
   font-weight: bold;
   color: var(--just-white);
