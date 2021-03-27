@@ -401,17 +401,18 @@ main {
   position: relative;
 }
 .main-know-product {
+  background-color: #c58116;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  min-width: 23rem;
-  max-width: 50rem;
   height: 39rem;
 }
 .main-know-product--img {
   width: 100%;
+  min-width: 23rem;
+  max-width: 50rem;
   height: 39rem;
   background-image: url("../assets/img/bitcoinbaby2x.png");
   background-size: cover;
