@@ -105,7 +105,7 @@ main {
   text-align: center;
 }
 .main-exchange-container--title {
-  width: 90%;
+  width: 80%;
   min-width: 29rem;
   max-width: 90rem;
   margin: 0 auto;
@@ -298,6 +298,7 @@ main {
   background-color: var(--warm-black);
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .main-product-detail .batata {
   display: inline-block;
@@ -313,14 +314,14 @@ main {
   align-self: center;
 }
 .main-product-detail .title {
-  width: 90%;
+  width: 80%;
   min-width: 29rem;
   max-width: 90rem;
   font-size: 2.4rem;
   font-weight: bold;
   color: var(--just-white);
   text-align: center;
-  margin-top: 3rem;
+  margin: 3rem auto 0;
 }
 .main-product-detail .subtitle {
   font-size: 1.4rem;
