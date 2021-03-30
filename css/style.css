@@ -135,10 +135,16 @@ main {
   color: #757575;
 }
 .main-exchange-container--tables {
+  gap: 4rem;
+  width: 100vw;
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+
   width: 70%;
-  min-width: 23rem;
+  min-width: 32rem;
   max-width: 50rem;
-  /* height: 36rem; */
   height: auto;
   margin: 0 auto;
   font-family: "Inter", sans-serif;
@@ -153,11 +159,13 @@ main {
   text-align: left;
 }
 .tables--currency--container {
+  position: relative;
+  scroll-snap-align: center;
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 90%;
-  min-width: 23rem;
+  min-width: 32rem;
   max-width: 30rem;
   height: 25rem;
   margin: 0 auto;
@@ -215,8 +223,7 @@ main {
 .currency-table--date {
   width: 19rem;
   height: 3rem;
-  margin: 0 auto;
-  margin-top: 1.5rem;
+  margin: 1.5rem auto;
   padding: 0.8rem;
   background-color: var(--soft-orange);
   border-radius: 0.8rem;
@@ -236,11 +243,13 @@ main {
   text-align: left;
 }
 .tables--commissions--container {
+  position: relative;
+  scroll-snap-align: center;
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 90%;
-  min-width: 23rem;
+  min-width: 32rem;
   max-width: 30rem;
   height: 25rem;
   margin: 0 auto;
@@ -339,7 +348,7 @@ main {
 .product-detail--card {
   align-self: center;
   width: 90%;
-  min-width: 23rem;
+  min-width: 32rem;
   max-width: 50rem;
   display: flex;
   flex-direction: column;
@@ -415,7 +424,7 @@ main {
 }
 .main-know-product--img {
   width: 100%;
-  min-width: 23rem;
+  min-width: 32rem;
   max-width: 50rem;
   height: 39rem;
   background-image: url("../assets/img/bitcoinbaby2x.png");
@@ -433,9 +442,9 @@ main {
   padding-top: 5rem;
 }
 .main-buy-product {
-  background-color: var(--just-white);
+  background-color: var(--soft-orange);
   width: 100%;
-  min-width: 23rem;
+  min-width: 32rem;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -455,11 +464,13 @@ main {
   padding: 2rem;
   margin-bottom: 2rem;
 }
-.buy-product--slider{
-	display: flex;
-	overflow-x: scroll;
-	overscroll-behavior-x:contain;
-	scroll-snap-type:  x proximity;
+.buy-product--slider {
+  gap: 4rem;
+  width: 100vw;
+  display: flex;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
 }
 .buy-detail--card {
   position: relative;
@@ -473,11 +484,11 @@ main {
   justify-content: center;
   margin-bottom: 4rem;
   width: 80%;
-  min-width: 23rem;
+  min-width: 32rem;
   max-width: 50rem;
   height: 38rem;
 }
-.buy-detail-card--recommended{
+.buy-detail-card--recommended {
   font-size: 1.2rem;
   font-weight: bold;
   color: var(--just-white);
@@ -489,18 +500,18 @@ main {
   position: relative;
   top: -2rem;
 }
-.buy-detail-card--pay-model{
+.buy-detail-card--pay-model {
   font-size: 1.4rem;
   font-weight: 500;
   margin: 1rem 0;
 }
-.buy-detail-card--price{
+.buy-detail-card--price {
   font-size: 5.2rem;
   font-weight: 700;
   font-family: "Inter", sans-serif;
   margin-bottom: 2rem;
 }
-.buy-detail-card--comment{
+.buy-detail-card--comment {
   font-size: 1.2rem;
   font-weight: 500;
   color: #757575;
@@ -508,7 +519,7 @@ main {
   width: 70%;
   margin-bottom: 2rem;
 }
-.buy-detail-card--select{
+.buy-detail-card--select {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -520,7 +531,7 @@ main {
   padding: 2rem;
   border: 2px solid var(--bitcoin-orange);
   border-radius: 0.4rem;
-  background-color: #FAF8F7;
+  background-color: #faf8f7;
 }
 .orange-arrow {
   display: inline-block;
@@ -533,7 +544,7 @@ main {
   background-repeat: no-repeat;
   position: relative;
 }
-footer{
+footer {
   background-color: var(--bitcoin-orange);
   display: flex;
   flex-direction: row;
@@ -543,13 +554,19 @@ footer{
   height: auto;
   padding: 1rem 0;
 }
-.footer-container-text p{
+.footer-container-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.footer-container-text a {
+  text-decoration: none;
   font-size: 1.4rem;
   font-weight: 500;
   color: var(--just-white);
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
-.footer-container-image{
+.footer-container-image {
   display: flex;
   flex-direction: column;
   justify-content: center;
