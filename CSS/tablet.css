@@ -1,0 +1,17 @@
+.main-exchange-container--tables {
+  justify-content: center;
+}
+.product-cards--container {
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.product-detail--card {
+  width: 40%;
+  height: 18rem;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 5rem;
+}

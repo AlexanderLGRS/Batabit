@@ -136,17 +136,15 @@ main {
 }
 .main-exchange-container--tables {
   gap: 4rem;
-  width: 100vw;
+  width: 90%;
   display: flex;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
-
-  width: 70%;
   min-width: 32rem;
-  max-width: 50rem;
+  /* max-width: 50rem; */
   height: auto;
-  margin: 0 auto;
+  margin: 2rem auto 4rem;
   font-family: "Inter", sans-serif;
 }
 .tables--currency--title {
@@ -453,9 +451,14 @@ main {
   padding: 5rem 0;
 }
 .main-buy-product .title {
+  width: 80%;
+  min-width: 29rem;
+  max-width: 90rem;
   font-size: 2.4rem;
   font-weight: bold;
   color: var(--black);
+  text-align: center;
+  margin: 3rem auto 0;
 }
 .main-buy-product .subtitle {
   font-size: 1.4rem;
@@ -466,7 +469,7 @@ main {
 }
 .buy-product--slider {
   gap: 4rem;
-  width: 100vw;
+  width: 90%;
   display: flex;
   overflow-x: scroll;
   overscroll-behavior-x: contain;
@@ -482,11 +485,11 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 4rem;
+  margin: 2rem auto 4rem;
   width: 80%;
   min-width: 32rem;
   max-width: 50rem;
-  height: 38rem;
+  height: auto;
 }
 .buy-detail-card--recommended {
   font-size: 1.2rem;
@@ -497,13 +500,13 @@ main {
   align-self: center;
   padding: 1rem;
   border-radius: 1rem;
-  position: relative;
+  position: absolute;
   top: -2rem;
 }
 .buy-detail-card--pay-model {
   font-size: 1.4rem;
   font-weight: 500;
-  margin: 1rem 0;
+  margin: 3rem 0;
 }
 .buy-detail-card--price {
   font-size: 5.2rem;
